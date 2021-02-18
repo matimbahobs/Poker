@@ -11,10 +11,12 @@ public class hello {
 
 	public static void main(String[] args) {
 
-		
+		//Suits S - Spade, D- Diamonds, H- hearts , etc
 		String[] suits = {"S", "C", "D", "H", "f"};
+		//Ranks 
 		String[] ranks = {"2", "3", "4", "5", "6", "7", "8", "9", "10","J","Q", "K", "A"};
 		String[] Deck = new String[52];
+		//for counting numbers of Js in a hand
 		int countJ=0;
 		
 		//will use these to count the numbers repeating in one's hand
@@ -38,10 +40,10 @@ public class hello {
 		}
 		
 
-		
+		//store hand cards
 		String[] hand = new String[5];
 		//handing 5 cards to the player
-//	
+//	used this for testing my hand evaluations
 //		hand[0] = "1S";
 //		hand[1] = "2S";
 //		hand[2] = "3S";
@@ -129,9 +131,9 @@ public class hello {
 	
         
         
-
-     
-
+/*
+  This is my hand evaluation, i couldnt use a library since i am using a notepad so i had to code everything from scratch   
+*/
         
         if(sum==1)
         {
